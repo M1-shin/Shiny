@@ -51,7 +51,6 @@ public class MainClass {
                                 System.out.println("No account registered yet!");
                                 break;
                             }
-
                             System.out.print("Enter your Account No: ");
                             int accountNo = sc.nextInt();
                             System.out.print("Enter your Pin: ");
@@ -65,7 +64,6 @@ public class MainClass {
                                     break;
                             }
                             }
-
                             if (!found) {
                                 attempts--;
                                 if (attempts == 0) {
@@ -75,7 +73,7 @@ public class MainClass {
                                 System.out.println("INVALID ACCOUNT! Attempts Left: " + attempts);
                             }   
                                 else{
-                                System.out.println("Login successful!");
+                                System.out.println("LOGIN SUCCESSFUL!");
                             }
                             break;
 
@@ -83,7 +81,7 @@ public class MainClass {
                             if (accounts.isEmpty()) {
                                 System.out.println("No account registered yet.");
                             } else {
-                                System.out.println("\n--- ALL REGISTERED ACCOUNTS ---");
+                                System.out.println("\nREGISTERED ACCOUNTS");
                                 for (BankingClass acc : accounts) {
                                     System.out.println("Account No: " + acc.getAccountNo());
                             }

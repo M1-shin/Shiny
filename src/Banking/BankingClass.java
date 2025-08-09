@@ -37,8 +37,5 @@ public class BankingClass {
     
     public void viewBalance(){
     
-    }
-    
-    
-    
+    } 
 }
